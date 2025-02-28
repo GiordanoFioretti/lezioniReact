@@ -1,0 +1,30 @@
+.contatore {
+
+    .contatore-number {
+        font-size: 60px
+    }
+
+    .rosso {
+        color: #e80505;
+    }
+
+    .contatore-button-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+
+        .contatore-button {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+        
+            &:active {
+                background-color: #CCC;
+            }
+        }
+    }
+
+    
+}

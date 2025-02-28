@@ -1,0 +1,24 @@
+.utenti{
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+    flex-wrap: wrap;
+    
+    .utente{
+        background-color: #FFCC6C;
+        padding: 7px;
+        height: 40px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+
+        .span{
+            display: block;
+        }
+        
+        &:hover{
+            background-color: #7c7466;
+        }
+    }
+}
