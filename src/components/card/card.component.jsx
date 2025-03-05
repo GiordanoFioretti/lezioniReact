@@ -13,7 +13,8 @@ class Card extends React.Component {
 
       this.state = {
          users: [],
-         loading: true
+         loading: true,
+         errore: false
       }
    }
    
@@ -25,10 +26,18 @@ class Card extends React.Component {
               users: values,
               loading: false
           })
-      });
+      })
+      .catch(dati =>{
+          this.setState({
+             errore: true
+          })
+      })
    }
    
    render(){
+      
+      if(this.state.errore) throw Error('Errore di Sistema!');
+
       const { testo } = this.props;
       return (
      <div className="card">
